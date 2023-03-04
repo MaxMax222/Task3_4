@@ -16,7 +16,15 @@ namespace Q27
             }
             return num;
         }
-
+        static bool IsSpecial(int[] arr)
+        {
+            bool check;
+            for (int i = 1; i < arr.Length; i++)
+            {
+                check = arr[i - 1] % 10 == ReturnMostLeftDigit(arr[i]);
+            }
+            return check;
+        }
         static void Main(string[] args)
         {
 
