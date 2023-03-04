@@ -31,7 +31,8 @@ namespace Q28
         }
         static void Main(string[] args)
         {
-
+            int[] arr = { 2, 3, 4, 4, 4, 5, 5, 6, 2, 1, 1, 1, 1, 5, 4 };
+            Console.WriteLine($"The length of the longest streak in the array: {LongestStreak(arr)}");
         }
     }
 }
