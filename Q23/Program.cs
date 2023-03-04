@@ -56,6 +56,8 @@ namespace Q23
                 arr[i] = double.Parse(Console.ReadLine());
             }
 
+
+
             PrintArr(arr);
 
             Console.WriteLine($"the averege value in the array is: {GetAverege(arr)}");
