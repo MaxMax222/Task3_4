@@ -8,8 +8,18 @@ namespace Q27
 {
     class Program
     {
+        static int ReturnMostLeftDigit(int num)
+        {
+            while (num > 0)
+            {
+                num /= 10;
+            }
+            return num;
+        }
+
         static void Main(string[] args)
         {
+
         }
     }
 }
