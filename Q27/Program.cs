@@ -10,15 +10,15 @@ namespace Q27
     {
         static int ReturnMostLeftDigit(int num)
         {
-            while (num > 0)
+            while (num > 10)
             {
                 num /= 10;
             }
-            return num;
+            return num % 10;
         }
         static bool IsSpecial(int[] arr)
         {
-            bool check;
+            bool check = false;
             for (int i = 1; i < arr.Length; i++)
             {
                 check = arr[i - 1] % 10 == ReturnMostLeftDigit(arr[i]);
@@ -27,7 +27,15 @@ namespace Q27
         }
         static void Main(string[] args)
         {
-
+            int[] arr = { 544, 41, 1, 1462, 243, 320 };
+            if (IsSpecial(arr))
+            {
+                Console.WriteLine("the array is special");
+            }
+            else
+            {
+                Console.WriteLine("the array is not special");
+            }
         }
     }
 }
